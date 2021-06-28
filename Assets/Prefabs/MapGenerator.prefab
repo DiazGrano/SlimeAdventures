@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5008559876030049770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5008559876030049768}
+  - component: {fileID: 5008559876030049769}
+  - component: {fileID: 1064599877357952263}
+  m_Layer: 0
+  m_Name: MapGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5008559876030049768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5008559876030049770}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5008559876030049769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5008559876030049770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fa6833300f32e64d942d5c04afec57d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilesPrefabs:
+  - {fileID: 3247877809318322927, guid: 5ba2bbf885548654e91432495a6701f1, type: 3}
+  mapContainerPrefab: {fileID: 4128176058463683557, guid: 946ed10aa3785eb42a45cee4f439f64f,
+    type: 3}
+  currentMapContainer: {fileID: 0}
+  currentMap: {fileID: 0}
+  mapName: EmptyMap
+  rows: 0
+  columns: 0
+  proceduralMap: 0
+  perlinNoiseScale: 0.3
+  brushState: 0
+  brushStyle: 0
+  selectedLayer: 0
+  selectedTilemap: {fileID: 0}
+  tileToDraw: {fileID: 3247877809318322927, guid: 5ba2bbf885548654e91432495a6701f1,
+    type: 3}
+  tileMode: 0
+  toolbarTab: 0
+  currentTab: Automatic tools
+--- !u!114 &1064599877357952263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5008559876030049770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e686734a926bf94283918359521a639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  mapEditor: {fileID: 5008559876030049769}

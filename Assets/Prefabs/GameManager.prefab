@@ -1,0 +1,258 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2248048572406411183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2248048572406411177}
+  - component: {fileID: 2248048572406411182}
+  - component: {fileID: 2248048572406411176}
+  - component: {fileID: 9179729894927489739}
+  - component: {fileID: 2083581318}
+  - component: {fileID: 2083581322}
+  - component: {fileID: 1125468742}
+  - component: {fileID: 2005527568}
+  - component: {fileID: 63750644}
+  - component: {fileID: 2085322476054636680}
+  - component: {fileID: 878850444}
+  - component: {fileID: 3966677187958279785}
+  - component: {fileID: 3150489728088414135}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2248048572406411177
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2248048572406411183}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2248048572406411182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2248048572406411183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef7aef7347df5b44a1163d628404b92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameState: 0
+  showGrid: 0
+  mapTileMatrix: {fileID: 0}
+  currentMap: {fileID: 0}
+  currentPlayer: {fileID: 0}
+  fpsText: {fileID: 0}
+  averagefpsText: {fileID: 0}
+  showHealthBars: 0
+  spritesAlpha: 150
+  transparentSprites: 0
+  visibleTiles: []
+  highlightPrefab: {fileID: 7362243135814050376, guid: 5cce3d19d48c24a42a7b0df73bab53a0,
+    type: 3}
+  disabledHighlightsList: []
+  enabledHighlightsList: []
+--- !u!114 &2248048572406411176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2248048572406411183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8f529327a459f4cba8f4150ba4f08e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minBattlefieldSize: 6
+  maxBattlefieldSize: 10
+  startingTilesAmount: 4
+  barriersPrefabsList:
+  - {fileID: 8028924961855965557, guid: fc06fe637c787a545898c74f4000ffb5, type: 3}
+  instantiatedBarriersList: []
+  currentBarriersList: []
+--- !u!114 &9179729894927489739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2248048572406411183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff8e71e6672de694283e0995320d108d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleDuration: 0
+  UIFightButton: {fileID: 0}
+  charactersFighting: []
+  playerGroup: []
+  enemiesGroup: []
+--- !u!114 &2083581318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2248048572406411183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3015984eb18ae4429dc9029dedcedbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2083581322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2248048572406411183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 648563749228c5f4db5cdc946d5e90c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diagonalEnabled: 1
+  maxSteps: 100
+  currentSteps: 0
+  pathColor: {r: 0.42608145, g: 0.754717, b: 0, a: 1}
+--- !u!114 &1125468742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2248048572406411183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de098fe79baf1d04e9db8f57a7f26069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highLight: {fileID: 4539496959528265386, guid: 8381e434f28154a4e815d8dbe3d06b8c,
+    type: 3}
+  maxTurnDuration: 5
+  enemiesGroup: []
+  playersGroup: []
+  UIFightButton: {fileID: 0}
+  background: {fileID: 0}
+  container: {fileID: 0}
+  characterHolder: {fileID: 9195252214622719852, guid: 2a8936591b2d50e4c9ebfd7b6cce7d42,
+    type: 3}
+  currentCharacterTurn: {fileID: 0}
+  nextCharacter: 0
+--- !u!114 &2005527568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2248048572406411183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52c8b3fe80e6f3d47b50085e8c917911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  offset: {x: 0, y: 0, z: -100}
+  minSize: 2
+  maxSize: 5
+  zoomSpeed: 40
+  touchZoomSpeed: 0.3
+  dragSpeed: 0.3
+  touchDragSpeed: 1
+--- !u!114 &63750644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2248048572406411183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b7592a1d92644e4b98323dbdac05c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellsList:
+  - {fileID: 11400000, guid: 50ada66740f589a4799012b31cbac1c4, type: 2}
+  selectedSpell: {fileID: 0}
+--- !u!114 &2085322476054636680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2248048572406411183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 177761114dd45474485a7bd33c70ef9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &878850444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2248048572406411183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26ff823fe0bc8344b8f42efcf675d864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellRangeTileColor: {r: 0, g: 0, b: 1, a: 1}
+  spellAOETileColor: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &3966677187958279785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2248048572406411183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c65eb1554dd9149b973c2b0894da07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageHUDCanvas: {fileID: 0}
+  damageHUDPrefab: {fileID: 6999425775689856824, guid: ba60b785f427f154db4898a9ca8d12c0,
+    type: 3}
+  damageText: {fileID: 0}
+  offset: {x: 0, y: 40, z: 0}
+  damageFontColor: {r: 0.78431374, g: 0, b: 0, a: 1}
+  healFontColor: {r: 0, g: 0.78431374, b: 0.16143489, a: 1}
+  zeroDamageFontColor: {r: 0.5849056, g: 0.5849056, b: 0.5849056, a: 1}
+--- !u!114 &3150489728088414135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2248048572406411183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38eccb3d6eaf8cc4994685a7e3442441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outterCloudColor: {r: 0.8235294, g: 0.8235294, b: 0.8235294, a: 1}
+  middlerCloudColor: {r: 0.7058824, g: 0.7058824, b: 0.7058824, a: 1}
+  centerCloudColor: {r: 0.5882353, g: 0.5882353, b: 0.5882353, a: 1}
+  moveCloudsEvery: 0.5
+  yAxisModifier: 0
+  perlinNoiseScale: 0.1

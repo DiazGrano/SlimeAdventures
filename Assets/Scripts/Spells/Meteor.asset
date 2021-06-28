@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7666cc3050b1ee64a9fce9c24c4ff5c8, type: 3}
+  m_Name: Meteor
+  m_EditorClassIdentifier: 
+  spellId: 2
+  spellIcon: {fileID: -6744407381781148267, guid: 556e6b87c45a20b4e88860bc0e83217f,
+    type: 3}
+  spellAnimation: {fileID: 8956231147567048268, guid: 429a6f2eb110ff047aee83636f60ea2c,
+    type: 3}
+  spellTileEffectAnimation: {fileID: 8262337763361642484, guid: 38d9075ef971de346916cef4450bcfd0,
+    type: 3}
+  spellName: Meteor
+  spellDescription: Let it rain!
+  spellType: 0
+  spellEffectValue: -4
+  spellCost: 5
+  spellMinRange: 3
+  spellMaxRange: 8
+  spellAOEMin: 0
+  spellAOEMax: 3
